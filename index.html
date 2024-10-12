@@ -1,1 +1,274 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kwasi's Portfolio - Robotics Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #001f3f;
+            color: white;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #00122d;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        .home h1 {
+            font-size: 3rem;
+        }
+        .home {
+            background-color: #001f3f;
+            color: white;
+        }
+        .about, .contact {
+            background-color: white;
+            color: #001f3f;
+        }
+        .projects {
+            background-color: #001f3f;
+            color: white;
+        }
+        .about ul, .projects ul {
+            list-style-type: none;
+        }
+        .about li, .projects li {
+            margin-bottom: 10px;
+        }
+        .about a, .contact a {
+            color: #001f3f;
+            text-decoration: underline;
+        }
+        .projects a {
+            color: white;
+        }
+        footer {
+            background-color: #00122d;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        /* Styling for the file upload section */
+        #cv-upload {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #00122d;
+            border-radius: 8px;
+            color: white;
+            display: inline-block;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        label {
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #001f3f;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        /* Projects submenu styling */
+        .projects-nav {
+            margin-bottom: 20px;
+        }
+        .projects-nav a {
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #00122d;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .projects-nav a:hover {
+            background-color: #ffcc00;
+            color: #001f3f;
+        }
+        .project-category {
+            display: none;
+        }
+        .project-category.active {
+            display: block;
+        }
+        /* Project card styling */
+        .project-card {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #003366;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .project-card p {
+            color: #dcdcdc;
+        }
+    </style>
+    <script>
+        function showCategory(categoryId) {
+            const categories = document.querySelectorAll('.project-category');
+            categories.forEach(category => {
+                category.classList.remove('active');
+            });
+            document.getElementById(categoryId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <h1>Kwasi - Robotics Engineer</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <h3>Education</h3>
+        <ul>
+            <li>Bachelor of Science in Electrical Engineering, XYZ University</li>
+            <li>Master of Science in Mechatronics Engineering, ABC University (Expected)</li>
+        </ul>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>Robotics: Motion Planning, State Estimation, Control Systems</li>
+            <li>Programming: Python, C++, MATLAB</li>
+            <li>Software: ROS, Gazebo, PyChrono</li>
+            <li>Machine Learning, Reinforcement Learning</li>
+        </ul>
+
+        <!-- CV Upload Section -->
+        <h3>Download CV</h3>
+        <p>You can download my CV here:</p>
+        <div id="cv-upload">
+            <a href="Kwasi_CV.pdf" download>Download My CV</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <!-- Projects Submenu -->
+        <div class="projects-nav">
+            <a href="#" onclick="showCategory('aerospace')">Aerospace</a>
+            <a href="#" onclick="showCategory('mechatronics')">Mechatronics</a>
+            <a href="#" onclick="showCategory('software-ai')">Software/AI</a>
+            <a href="#" onclick="showCategory('electrical')">Electrical</a>
+        </div>
+
+        <!-- Aerospace Projects -->
+        <div id="aerospace" class="project-category active">
+            <div class="project-card">
+                <img src="aerospace_project1.jpg" alt="Autonomous Quadcopter Simulation">
+                <h3>Autonomous Quadcopter Simulation using MATLAB</h3>
+                <p>This project involved simulating the flight of an autonomous quadcopter using MATLAB and Simulink. The control system was designed using PID and LQR control methods to stabilize the quadcopter and guide it through a pre-defined flight path.</p>
+            </div>
+            <div class="project-card">
+                <img src="aerospace_project2.jpg" alt="Tilt-Rotor VTOL Simulation">
+                <h3>Tilt-Rotor VTOL Simulation in Unreal Engine</h3>
+                <p>Using Unreal Engine, I simulated the flight dynamics of a tilt-rotor VTOL aircraft. This simulation was focused on the transition between vertical takeoff/landing and forward flight, providing insights into control strategies and flight stability.</p>
+            </div>
+            <div class="project-card">
+                <img src="aerospace_project3.jpg" alt="Flight Path Optimization">
+                <h3>Flight Path Optimization for UAVs</h3>
+                <p>This project focused on developing algorithms to optimize the flight paths of UAVs in complex environments. By minimizing energy consumption and maximizing flight efficiency, the UAVs were able to traverse various terrains autonomously.</p>
+            </div>
+        </div>
+
+        <!-- Mechatronics Projects -->
+        <div id="mechatronics" class="project-category">
+            <div class="project-card">
+                <img src="mechatronics_project1.jpg" alt="Inverse Kinematics Solver">
+                <h3>Inverse Kinematics Solver for a 5-DOF Robotic Arm</h3>
+                <p>Developed an inverse kinematics algorithm for a 5-DOF robotic arm. The solver allowed precise control of the robotic arm's end-effector, enabling it to follow complex trajectories in a 3D workspace.</p>
+            </div>
+            <div class="project-card">
+                <img src="mechatronics_project2.jpg" alt="Terrain Modeling">
+                <h3>Terrain Modeling using Project Chrono</h3>
+                <p>Using Project Chrono, I modeled different types of terrains and evaluated the interaction between robotic wheels and deformable soil. The project focused on improving the traction of robots in rough terrain environments.</p>
+            </div>
+            <div class="project-card">
+                <img src="mechatronics_project3.jpg" alt="Robotic Arm Path Planning">
+                <h3>Robotic Arm Path Planning</h3>
+                <p>Designed a path planning algorithm for a 6-DOF robotic arm using the Rapidly-exploring Random Trees (RRT) method. The algorithm allowed the robot to navigate obstacles and complete tasks in cluttered environments.</p>
+            </div>
+        </div>
+
+        <!-- Software/AI Projects -->
+        <div id="software-ai" class="project-category">
+            <div class="project-card">
+                <img src="software_project1.jpg" alt="Reinforcement Learning for Quadcopter">
+                <h3>Reinforcement Learning for Quadcopter Control</h3>
+                <p>This project applied reinforcement learning (RL) techniques to develop a control policy for a quadcopter. The RL model was trained in a simulation environment to minimize errors and stabilize the flight path under different environmental conditions.</p>
+            </div>
+            <div class="project-card">
+                <img src="software_project2.jpg" alt="Mapping Algorithms for Mower Simulation">
+                <h3>Mapping Algorithms for Mower Simulation</h3>
+                <p>Developed a programmable mower simulation using Unreal Engine that utilized mapping and path planning algorithms to autonomously mow a lawn. The system integrated obstacle avoidance and real-time mapping capabilities.</p>
+            </div>
+        </div>
+
+        <!-- Electrical Projects -->
+        <div id="electrical" class="project-category">
+            <div class="project-card">
+                <img src="electrical_project1.jpg" alt="Theremin Build">
+                <h3>Theremin Build</h3>
+                <p>I designed and built a functioning Theremin for a music and engineering course. The project involved creating the oscillators, antennas, and control circuitry, as well as tuning the instrument to achieve the desired frequency range.</p>
+            </div>
+            <div class="project-card">
+                <img src="electrical_project2.jpg" alt="Long-range Rover Antenna">
+                <h3>Long-range Rover Antenna Design</h3>
+                <p>This project focused on improving the communication range of a rover by designing and testing antennas operating at 900 MHz and 2.4 GHz. Various antenna designs were simulated and tested to maximize signal strength and communication reliability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:kwasi@example.com">kwasi@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/kwasi">linkedin.com/in/kwasi</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kwasi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
