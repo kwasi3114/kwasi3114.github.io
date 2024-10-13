@@ -42,11 +42,11 @@
             background-color: #001f3f;
             color: white;
         }
-        .about, .contact {
+        .about, .organizations {
             background-color: white;
             color: #001f3f;
         }
-        .projects {
+        .projects, .contact {
             background-color: #001f3f;
             color: white;
         }
@@ -56,11 +56,11 @@
         .about li, .projects li {
             margin-bottom: 10px;
         }
-        .about a, .contact a {
+        .about a,  {
             color: #001f3f;
             text-decoration: underline;
         }
-        .projects a {
+        .projects a, .contact a {
             color: white;
         }
         footer {
@@ -127,10 +127,59 @@
         .project-card p {
             color: #dcdcdc;
         }
+        
+        /*Organizations submenu styling */
+        .organizations-nav {
+            margin-bottom: 20px;
+        }
+        .organizations-nav a {
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #00122d;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .organizations-nav a:hover {
+            background-color: #ffcc00;
+            color: #001f3f;
+        }
+        .organizations-category {
+            display: none;
+        }
+        .organizations-category.active {
+            display: block;
+        }
+        /* Project card styling */
+        .organizations-card {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #003366;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .organizations-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .organizations-card p {
+            color: #dcdcdc;
+        }
+        
     </style>
     <script>
         function showCategory(categoryId) {
             const categories = document.querySelectorAll('.project-category');
+            categories.forEach(category => {
+                category.classList.remove('active');
+            });
+            document.getElementById(categoryId).classList.add('active');
+        }
+        
+        function showCategoryO(categoryId) {
+            const categories = document.querySelectorAll('.organizations-category');
             categories.forEach(category => {
                 category.classList.remove('active');
             });
@@ -145,6 +194,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#organizations">Organizations</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -183,12 +233,13 @@
         <h2>Projects</h2>
 
         <!-- Projects Submenu -->
-        <div class="projects-nav">
-            <a href="#" onclick="showCategory('aerospace')">Aerospace</a>
-            <a href="#" onclick="showCategory('mechatronics')">Mechatronics</a>
-            <a href="#" onclick="showCategory('software-ai')">Software/AI</a>
-            <a href="#" onclick="showCategory('electrical')">Electrical</a>
-        </div>
+    <div class="projects-nav">
+        <a href="#" onclick="showCategory('aerospace'); event.preventDefault();">Aerospace</a>
+        <a href="#" onclick="showCategory('mechatronics'); event.preventDefault();">Mechatronics</a>
+        <a href="#" onclick="showCategory('software-ai'); event.preventDefault();">Software/AI</a>
+        <a href="#" onclick="showCategory('electrical'); event.preventDefault();">Electrical</a>
+    </div>
+
 
         <!-- Aerospace Projects -->
         <div id="aerospace" class="project-category active">
@@ -256,6 +307,76 @@
             </div>
         </div>
     </section>
+    
+        <!-- Organizations Section -->
+    <section id="organizations" class="organizations">
+        <h2>Organizations</h2>
+
+        <!-- Organizations Submenu -->
+        <div class="organizations-nav">
+            <a href="#" onclick="showCategoryO('wisconsin-robotics'); event.preventDefault();">Wisconsin Robotics</a>
+            <a href="#" onclick="showCategoryO('wisconsin-autonomous'); event.preventDefault();">Wisconsin Autonomous</a>
+            <a href="#" onclick="showCategoryO('badgerfly'); event.preventDefault();">Badgerfly</a>
+            <a href="#" onclick="showCategoryO('aiaa-uw'); event.preventDefault();">AIAA UW-Madison</a>
+            <a href="#" onclick="showCategoryO('badger-solar'); event.preventDefault();">Badger Solar Racing</a>
+            <a href="#" onclick="showCategoryO('aerial-robotics'); event.preventDefault();">Aerial Robotics Competition Team</a>
+        </div>
+
+        <!-- Wisconsin Robotics -->
+        <div id="wisconsin-robotics" class="organizations-category active">
+            <div class="project-card">
+                <img src="wisconsin_robotics_project.jpg" alt="Autonomous Rover Build">
+                <h3>Autonomous Rover Build</h3>
+                <p>As part of Wisconsin Robotics, I contributed to building an autonomous rover for a Mars exploration simulation. My role included designing and testing the control system and navigation algorithms.</p>
+            </div>
+        </div>
+
+        <!-- Wisconsin Autonomous -->
+        <div id="wisconsin-autonomous" class="organizations-category">
+            <div class="project-card">
+                <img src="wisconsin_autonomous_project.jpg" alt="Self-driving Car Simulation">
+                <h3>Self-driving Car Simulation</h3>
+                <p>Collaborated with Wisconsin Autonomous to develop a self-driving car simulation using ROS and Gazebo. The simulation tested various autonomous driving algorithms for navigation and object avoidance.</p>
+            </div>
+        </div>
+
+        <!-- Badgerfly -->
+        <div id="badgerfly" class="organizations-category">
+            <div class="project-card">
+                <img src="badgerfly_project.jpg" alt="Fixed-Wing UAV Design">
+                <h3>Fixed-Wing UAV Design</h3>
+                <p>With Badgerfly, I helped design a fixed-wing UAV optimized for long-range flight. The project involved aerodynamic simulations, control system design, and hardware integration.</p>
+            </div>
+        </div>
+
+        <!-- AIAA UW-Madison -->
+        <div id="aiaa-uw" class="organizations-category">
+            <div class="project-card">
+                <img src="aiaa_uw_project.jpg" alt="Rocket Payload Integration">
+                <h3>Rocket Payload Integration</h3>
+                <p>At AIAA UW-Madison, I worked on integrating sensors and data acquisition systems into a rocket payload for high-altitude atmospheric measurements during a student launch competition.</p>
+            </div>
+        </div>
+
+        <!-- Badger Solar Racing -->
+        <div id="badger-solar" class="organizations-category">
+            <div class="project-card">
+                <img src="badger_solar_project.jpg" alt="Solar-powered Vehicle Drive System">
+                <h3>Solar-powered Vehicle Drive System</h3>
+                <p>Participated in designing the electrical drive system for Badger Solar Racing's solar-powered vehicle. The system was optimized for energy efficiency and power management during endurance races.</p>
+            </div>
+        </div>
+
+        <!-- Aerial Robotics Competition Team -->
+        <div id="aerial-robotics" class="organizations-category">
+            <div class="project-card">
+                <img src="aerial_robotics_project.jpg" alt="Aerial Object Retrieval">
+                <h3>Aerial Object Retrieval</h3>
+                <p>Worked with the Aerial Robotics Competition Team to design a UAV capable of autonomous object retrieval in an outdoor environment. The project focused on precise control and vision-based navigation.</p>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
