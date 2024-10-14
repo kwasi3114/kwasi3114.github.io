@@ -284,14 +284,19 @@
         <!-- Software/AI Projects -->
         <div id="software-ai" class="project-category">
             <div class="project-card">
-                <img src="software_project1.jpg" alt="Reinforcement Learning for Quadcopter">
+                <img src="quadcopter_sim.jpg" alt="Reinforcement Learning for Quadcopter">
                 <h3>Reinforcement Learning for Quadcopter Control</h3>
-                <p>This project applied reinforcement learning (RL) techniques to develop a control policy for a quadcopter. The RL model was trained in a simulation environment to minimize errors and stabilize the flight path under different environmental conditions.</p>
+                <p>This project applied reinforcement learning (RL) techniques to develop a control policy for a quadcopter. The Linear Quadratic Regulator (LQR) algorithm was used for the control of the quadcopter, and this control algorithm is tuned by modifying its Q and R matrices. The goal of this project is to find Q and R matrices that  minimize mean position and velocity error for the quadcopter. While the RL model was programmed in Python, the simulation, control, and testing of the quadcopter is done in MATLAB.</p>
             </div>
             <div class="project-card">
-                <img src="software_project2.jpg" alt="Mapping Algorithms for Mower Simulation">
-                <h3>Mapping Algorithms for Mower Simulation</h3>
-                <p>Developed a programmable mower simulation using Unreal Engine that utilized mapping and path planning algorithms to autonomously mow a lawn. The system integrated obstacle avoidance and real-time mapping capabilities.</p>
+                <img src="webots_sim.jpg" alt="Dynamic Path Planning of Autonomous Lawn Mower">
+                <h3>Dynamic Path Planning of Autonomous Lawn Mower</h3>
+                <p>I developed a programmable mower simulation using WeBots that utilized mapping and path planning algorithms to autonomously mow a lawn. For path planning, the Boustrophedon Cellular Decomposition (BCD) algorithm was used. Furthermore, LiDAR-based SLAM is being integrated into the simulator in order to allow for dynamic obstacle avoidance and rerouting. </p>
+            </div>
+            <div class="project-card">
+                <img src="dl_model.jpg" alt="Road Sign Detection Model">
+                <h3>Road Sign Detection Model</h3>
+                <p>The main goal of this project was to develop a deep learning model that could identify road signs with high accuracy. In order to implement this, I chose to utilize Region-Based Convolutional Neural Networks (RCNN). The dataset used in the initial training had 877 images with annotations with images of four classes: speed limit signs, traffic lights, stop signs, and crosswalks. The first training of the developed algorithm achieved an accuracy of around 87%. At the moment, I am building on this project with the goals of improving accuracy, broadening the dataset to include more classes, and integrating OpenCV for real-time detection. </p>
             </div>
         </div>
 
