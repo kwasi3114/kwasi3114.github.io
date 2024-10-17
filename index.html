@@ -265,14 +265,14 @@
         <!-- Mechatronics Projects -->
         <div id="mechatronics" class="project-category">
             <div class="project-card">
-                <img src="mechatronics_project1.jpg" alt="Inverse Kinematics Solver">
-                <h3>Inverse Kinematics Solver for a 5-DOF Robotic Arm</h3>
-                <p>Developed an inverse kinematics algorithm for a 5-DOF robotic arm. The solver allowed precise control of the robotic arm's end-effector, enabling it to follow complex trajectories in a 3D workspace.</p>
+                <img src="bipedal_control.jpg" alt="Optimal Control for Bipedal Robot">
+                <h3>Optimal Control for Bipedal Robot</h3>
+                <p>Using MATLAB and Simulink, I developed, tested, and simulated optimal control algorithms for a bipedal robot. The two control algorithms that I chose to implement were Model Predictive Control (MPC) and the Linear Quadratic Regulator (LQR) algorithm. With the Simscape Multibody MaTLAB add-on, I was able to develop graphs to display the results of each algorithm. From my results, the LQR algorithm provided better gait but worse path following, whereas the MPC algorithm stayed on its path better but had an awkward gait. </p>
             </div>
             <div class="project-card">
-                <img src="mechatronics_project2.jpg" alt="Terrain Modeling">
-                <h3>Terrain Modeling using Project Chrono</h3>
-                <p>Using Project Chrono, I modeled different types of terrains and evaluated the interaction between robotic wheels and deformable soil. The project focused on improving the traction of robots in rough terrain environments.</p>
+                <img src="microrover.jpg" alt="Autonomous MicroRover">
+                <h3>Autonomous MicroRover</h3>
+                <p>A current project in progress. I am attempting to program a wheeled robot capable of autonomous navigation. I am integrating various sensors, including LiDAR and cameras, for obstacle detection and avoidance. In addition, I am using two Arduinos and Raspberry Pi for motor control and perception functions. For the navigation aspect, as to simulate navigation in a GPS-denied environment, I will instead use dead reckoning </p>
             </div>
             <div class="project-card">
                 <img src="mechatronics_project3.jpg" alt="Robotic Arm Path Planning">
@@ -296,7 +296,7 @@
             <div class="project-card">
                 <img src="dl_model.jpg" alt="Road Sign Detection Model">
                 <h3>Road Sign Detection Model</h3>
-                <p>The main goal of this project was to develop a deep learning model that could identify road signs with high accuracy. In order to implement this, I chose to utilize Region-Based Convolutional Neural Networks (RCNN). The dataset used in the initial training had 877 images with annotations with images of four classes: speed limit signs, traffic lights, stop signs, and crosswalks. The first training of the developed algorithm achieved an accuracy of around 87%. At the moment, I am building on this project with the goals of improving accuracy, broadening the dataset to include more classes, and integrating OpenCV for real-time detection. </p>
+                <p>The main goal of this project was to develop a deep learning model that could identify road signs with high accuracy. In order to implement this, I chose to utilize Region-Based Convolutional Neural Networks (RCNN). The dataset used in the initial training had 877 images with annotations with images of four classes: speed limit signs, traffic lights, stop signs, and crosswalks. The first training of the developed algorithm achieved an accuracy of around 87%. At the moment, I am building on this project with the goals of improving accuracy, broadening the dataset to include more classes, and integrating OpenCV for real-time detection. ROS2 Humble is used to integrate all of the programs. </p>
             </div>
         </div>
 
@@ -328,54 +328,54 @@
         <div class="organizations-nav">
             <a href="#" onclick="showCategoryO('wisconsin-robotics'); event.preventDefault();">Wisconsin Robotics</a>
             <a href="#" onclick="showCategoryO('wisconsin-autonomous'); event.preventDefault();">Wisconsin Autonomous</a>
-            <a href="#" onclick="showCategoryO('badgerfly'); event.preventDefault();">Badgerfly</a>
-            <a href="#" onclick="showCategoryO('aiaa-uw'); event.preventDefault();">AIAA UW-Madison</a>
+            <a href="#" onclick="showCategoryO('badgerfly'); event.preventDefault();">BadgerFly</a>
+            <a href="#" onclick="showCategoryO('aiaa-uw'); event.preventDefault();">AIAA</a>
             <a href="#" onclick="showCategoryO('badger-solar'); event.preventDefault();">Badger Solar Racing</a>
-            <a href="#" onclick="showCategoryO('aerial-robotics'); event.preventDefault();">Aerial Robotics Competition Team</a>
+            <a href="#" onclick="showCategoryO('aerial-robotics'); event.preventDefault();">ARCT</a>
         </div>
 
         <!-- Wisconsin Robotics -->
         <div id="wisconsin-robotics" class="organizations-category active">
             <div class="project-card">
-                <img src="wisconsin_robotics_project.jpg" alt="Autonomous Rover Build">
-                <h3>Autonomous Rover Build</h3>
-                <p>As part of Wisconsin Robotics, I contributed to building an autonomous rover for a Mars exploration simulation. My role included designing and testing the control system and navigation algorithms.</p>
+                <img src="wisconsin_robotics_project.jpg" alt="Wisconsin Robotics">
+                <h3>Wisconsin Robotics</h3>
+                <p>For three years, I was the electrical and chassis lead for WR. Throughout my time there, I had the opportunity to work on and lead several projects. Some key ones include the embedded programming and hardware testing of a time-of-flight sensor, optimization of rover camera and communication system, and selection and testing of brushless motors in order to improve drive stability and torque. I also got the chance to learn and develop skills in various areas of electrical engineering, ranging from PCB design, RF systems, embedded programming, soldering, and hardware testing with oscilloscopes. In my final year, our team was able to achieve 12th out of 102 teams at the University Rover Challenge 2024. </p>
             </div>
         </div>
 
         <!-- Wisconsin Autonomous -->
         <div id="wisconsin-autonomous" class="organizations-category">
             <div class="project-card">
-                <img src="wisconsin_autonomous_project.jpg" alt="Self-driving Car Simulation">
-                <h3>Self-driving Car Simulation</h3>
-                <p>Collaborated with Wisconsin Autonomous to develop a self-driving car simulation using ROS and Gazebo. The simulation tested various autonomous driving algorithms for navigation and object avoidance.</p>
+                <img src="wisconsin_autonomous_project.jpg" alt="Wisconsin Autonomous">
+                <h3>Wisconsin Autonomous</h3>
+                <p> From my first semester up until a month after my graduation, I was a part of the Controls team of Wisconsin Autonomous, participants in the Indy Autonomous Challenge and then the SAE AutoDrive Challenge. The main goal of our subteam was the research and development of algorithms for vehicle path planning with real-time obstacle avoidance with the data provided to us from the Perception and Mapping subteams. In addition to utilzing Python and C++ in a majority of our programming, we also used MATLAB for simulation and ROS in the integration of our code with the other subteams. When I was there, I primarily worked on the development of various simulations in MATLAB to test different path planning and sensing algorithms. </p>
             </div>
         </div>
 
         <!-- Badgerfly -->
         <div id="badgerfly" class="organizations-category">
             <div class="project-card">
-                <img src="badgerfly_project.jpg" alt="Fixed-Wing UAV Design">
-                <h3>Fixed-Wing UAV Design</h3>
-                <p>With Badgerfly, I helped design a fixed-wing UAV optimized for long-range flight. The project involved aerodynamic simulations, control system design, and hardware integration.</p>
+                <img src="badgerfly_project.jpg" alt="BadgerFly">
+                <h3>BadgerFly</h3>
+                <p>Halfway through my third year, I became affiliated with BadgerFly, a new organization on campus, as its vice president. I would become president in the second half of my senior year. BadgerFly is UW-Madison's first club focused on drone and VTOL flying and engineering. As president, I handled much of the team's administrative tasks and oversaw our overall project. Our goal was to design a VTOL aircraft for participation in the Vertical Flight Society's Design-Fly-Build competition. Our VTOL build is a tiltrotor VTOL, with two tilting motors at the edge of our fixed wings and a single propeller at the back for stability. While I generally worked on all aspects of engineering, my main focus was with software and controls, with much of my time spent researching autonomous VTOL flight and control systems to keep our aircraft stable. </p>
             </div>
         </div>
 
         <!-- AIAA UW-Madison -->
         <div id="aiaa-uw" class="organizations-category">
             <div class="project-card">
-                <img src="aiaa_uw_project.jpg" alt="Rocket Payload Integration">
-                <h3>Rocket Payload Integration</h3>
-                <p>At AIAA UW-Madison, I worked on integrating sensors and data acquisition systems into a rocket payload for high-altitude atmospheric measurements during a student launch competition.</p>
+                <img src="aiaa_uw_project.jpg" alt="AIAA">
+                <h3>AIAA UW-Madison</h3>
+                <p>From the start of my second year, I became involved with UW's AIAA organization. This organization's competition team was centered around a small-scale high powered model rocket for participation in Spaceport America Rocketry Competition. Being one of the few ECE majors on the team, I was one of the leaders of the avionics subteam. In this subteam, we handled all of the electronic components in the rocket for tasks such as sensor measurement, propulsion, and recovery/landing. A fair amount of circuit building and design was done in order to ensure system correctness and component redundancy. </p>
             </div>
         </div>
 
         <!-- Badger Solar Racing -->
         <div id="badger-solar" class="organizations-category">
             <div class="project-card">
-                <img src="badger_solar_project.jpg" alt="Solar-powered Vehicle Drive System">
-                <h3>Solar-powered Vehicle Drive System</h3>
-                <p>Participated in designing the electrical drive system for Badger Solar Racing's solar-powered vehicle. The system was optimized for energy efficiency and power management during endurance races.</p>
+                <img src="badger_solar_project.jpg" alt="Badger Solar Racing">
+                <h3>Badger Solar Racing</h3>
+                <p>For a large duration of my third and fourth years of undergraduate, I was a member of the Firmware team of Badger Solar Racing (formerly BadgerLoop). Our role in this subteam was to work on the control system of the car. This mainly involved creating a state machine to represent the car's different states (park, idle, etc) and utilzing digital signals in order to know when to change states. In addition to this, we worked on a PID controller to allow for PID control of our car. I utilized MATLAB in order to tune the PID controller.</p>
             </div>
         </div>
 
@@ -383,8 +383,8 @@
         <div id="aerial-robotics" class="organizations-category">
             <div class="project-card">
                 <img src="aerial_robotics_project.jpg" alt="Aerial Object Retrieval">
-                <h3>Aerial Object Retrieval</h3>
-                <p>Worked with the Aerial Robotics Competition Team to design a UAV capable of autonomous object retrieval in an outdoor environment. The project focused on precise control and vision-based navigation.</p>
+                <h3>Aerial Robotics Competition Teaml</h3>
+                <p>Upon starting my graduate program at KSU, I decided to join ARCT. Our club's goal is to develop a lightweight autonomous aircraft for the SAE Aero Design challenge. I am a part of the GNC (Guidance, Navigation, Control) subteam, in which I primarily focus on our aircraft's communication and GPS systems. Our communication system relies on the use of two 900Mhz telemetry modules to strike a good balance of strength and range in our connection. For the GPS system, we are attempting to integrate multiple techniques in order to improve our accuracy as much as possible, with the main optimization being the usage of real-time kinematics (RTK). In addition to RTK, we also are attempting to implement post-processing kinematics (PPK) and the Extended Kalman Filter (EKF) in conjunction with an Inertial Measurement Unit (IMU) in order to perform sensor fusion. </p>
             </div>
         </div>
     </section>
@@ -393,8 +393,8 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:kwasi@example.com">kwasi@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/kwasi">linkedin.com/in/kwasi</a></p>
+        <p>Email: <a href="mailto:kdebrahp@gmail.com">kdebrahp@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kwasi-debrah-pinamang-1116821b8/">linkedin.com/in/kwasi</a></p>
     </section>
 
     <!-- Footer -->
