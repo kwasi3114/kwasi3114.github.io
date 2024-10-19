@@ -246,17 +246,17 @@
         <!-- Aerospace Projects -->
         <div id="aerospace" class="project-category active">
             <div class="project-card">
-                <img src="flight_controller.jpg" alt="Airplane Flight Controller">
+                <img src="flight_controller.jpg" alt="Airplane Flight Controller" width="1000" height="500">
                 <h3>Flight Controller for Boeing 737-800</h3>
                 <p>This project involved designing a controller and simulating a Boeing 737-800 aircraft using Simulink and FlightGear. The goal of this controller was to keep the airplane at a constant pitch angle. To develop the controller, I started by using principles of 3D dynamics to generate a state-space model for the aircraft. Next, using that state-space model, I used Simulink to generate a closed-loop block diagram with a PID controller to adjust the altitude in real time. The PID controller was tuned using Simulink's PID Tuner application. To verify the control system, a step input was fed into the closed loop and simulated with FlightGear.</p>
             </div>
             <div class="project-card">
-                <img src="free_flyer.jpg" alt="Interplanetary Hohmann Transfer">
+                <img src="free_flyer.jpg" alt="Interplanetary Hohmann Transfer" width="1000" height="500">
                 <h3>Interplanetary Hohmann Transfer of Spacecrafts</h3>
                 <p>Using the FreeFlyer software, I calculated and programmed a simulation to simulate the Hohmann transfer from Earth to Mars. The FreeFlyer software is a program designed for simulating the orbit of spacecrafts, with the programing language utilized being similar to Java. The process of modeling starts with calculating the Hohmann velocity, which is done using the axes of the orbits and gravitational parameter of the sun. Next, the phase angle is computed. With both of these and some additional setup in the FreeFlyer software, we can simulate our spacecraft's orbital transfer.</p>
             </div>
             <div class="project-card">
-                <img src="rocketry.jpg" alt="Rocket Design and Simulation">
+                <img src="rocketry.jpg" alt="Rocket Design and Simulation" width="1000" height="500">
                 <h3>Rocket Design and Simulation</h3>
                 <p>The main goal of this project was to practice both rocket design and computational fluid dynamics. Using OpenRocket, I designed a simple rocket, ensuring stability by selecting parts to make the center of gravity and center of pressure are towards the bottom of the rocket. Next, using ANSYS/OpenFOAM, I have set up a fluid dynamics simulation to attempt to calculate drag generated in my rocket design. </p>
             </div>
@@ -265,17 +265,17 @@
         <!-- Mechatronics Projects -->
         <div id="mechatronics" class="project-category">
             <div class="project-card">
-                <img src="bipedal_control.jpg" alt="Optimal Control for Bipedal Robot">
+                <img src="bipedal_control.jpg" alt="Optimal Control for Bipedal Robot" width="1000" height="500">
                 <h3>Optimal Control for Bipedal Robot</h3>
                 <p>Using MATLAB and Simulink, I developed, tested, and simulated optimal control algorithms for a bipedal robot. The two control algorithms that I chose to implement were Model Predictive Control (MPC) and the Linear Quadratic Regulator (LQR) algorithm. With the Simscape Multibody MaTLAB add-on, I was able to develop graphs to display the results of each algorithm. From my results, the LQR algorithm provided better gait but worse path following, whereas the MPC algorithm stayed on its path better but had an awkward gait. </p>
             </div>
             <div class="project-card">
-                <img src="microrover.jpg" alt="Autonomous MicroRover">
+                <img src="microrover.jpg" alt="Autonomous MicroRover" width="1000" height="500">
                 <h3>Autonomous MicroRover</h3>
                 <p>A current project in progress. I am attempting to program a wheeled robot capable of autonomous navigation. I am integrating various sensors, including LiDAR and cameras, for obstacle detection and avoidance. In addition, I am using two Arduinos and Raspberry Pi for motor control and perception functions. For the navigation aspect, as to simulate navigation in a GPS-denied environment, I will instead use dead reckoning </p>
             </div>
             <div class="project-card">
-                <img src="skee_ball.jpg" alt="Skee Ball Machine">
+                <img src="skee_ball.jpg" alt="Skee Ball Machine" width="1000" height="500">
                 <h3>Skee Ball Machine</h3>
                 <p>In a collaboration event with Oshkosh Corporation for UW's Engineering Expo event in April 2024, I led a project in creating a skee-ball machine from scratch. To manufacture the machine, we used acrylic, wood, and foam for both aesthetic and functionality. A combination of laser cutting, 3D printing, and CNC routing to cut out the pieces for our machine. A programmed Arduino Mega board and various electroincs such as a photoresistor and reset button were used to implement the game logic.</p>
             </div>
@@ -284,17 +284,17 @@
         <!-- Software/AI Projects -->
         <div id="software-ai" class="project-category">
             <div class="project-card">
-                <img src="quadcopter_sim.jpg" alt="Reinforcement Learning for Quadcopter">
+                <img src="quadcopter_sim.jpg" alt="Reinforcement Learning for Quadcopter" width="1000" height="500">
                 <h3>Reinforcement Learning for Quadcopter Control</h3>
                 <p>This project applied reinforcement learning (RL) techniques to develop a control policy for a quadcopter. The Linear Quadratic Regulator (LQR) algorithm was used for the control of the quadcopter, and this control algorithm is tuned by modifying its Q and R matrices. The goal of this project is to find Q and R matrices that  minimize mean position and velocity error for the quadcopter. While the RL model was programmed in Python, the simulation, control, and testing of the quadcopter is done in MATLAB.</p>
             </div>
             <div class="project-card">
-                <img src="webots_sim.jpg" alt="Dynamic Path Planning of Autonomous Lawn Mower">
+                <img src="webots_sim.jpg" alt="Dynamic Path Planning of Autonomous Lawn Mower" width="1000" height="500">
                 <h3>Dynamic Path Planning of Autonomous Lawn Mower</h3>
                 <p>I developed a programmable mower simulation using WeBots that utilized mapping and path planning algorithms to autonomously mow a lawn. For path planning, the Boustrophedon Cellular Decomposition (BCD) algorithm was used. Furthermore, LiDAR-based SLAM is being integrated into the simulator in order to allow for dynamic obstacle avoidance and rerouting. </p>
             </div>
             <div class="project-card">
-                <img src="dl_model.jpg" alt="Road Sign Detection Model">
+                <img src="dl_model.jpg" alt="Road Sign Detection Model" width="1000" height="500">
                 <h3>Road Sign Detection Model</h3>
                 <p>The main goal of this project was to develop a deep learning model that could identify road signs with high accuracy. In order to implement this, I chose to utilize Region-Based Convolutional Neural Networks (RCNN). The dataset used in the initial training had 877 images with annotations with images of four classes: speed limit signs, traffic lights, stop signs, and crosswalks. The first training of the developed algorithm achieved an accuracy of around 87%. At the moment, I am building on this project with the goals of improving accuracy, broadening the dataset to include more classes, and integrating OpenCV for real-time detection. ROS2 Humble is used to integrate all of the programs. </p>
             </div>
@@ -303,17 +303,17 @@
         <!-- Electrical Projects -->
         <div id="electrical" class="project-category">
             <div class="project-card">
-                <img src="ece303_diagram.jpg" alt="Real-Time Audio Synthesizer">
+                <img src="ece303_diagram.jpg" alt="Real-Time Audio Synthesizer" width="1000" height="500">
                 <h3>Real-Time Audio Synthesizer</h3>
                 <p>I developed a program to implement audio effects in real time using Matlab and C. The effects implemented were an echo effect, the flanging effect, and a chorus effect. The Finite Impulse Response (FIR) and Infinite Impulse Response (IIR) to manipulate audio input and achieve desired effects. The algorithm was deployed onto an FPGA board to test and verify its correctness. </p>
             </div>
             <div class="project-card">
-                <img src="ece552_screencap.jpg" alt="Five Stage MIPS Pipelined Processor">
+                <img src="ece552_screencap.jpg" alt="Five Stage MIPS Pipelined Processor" width="1000" height="500">
                 <h3>Five Stage MIPS Pipelined Processor</h3>
                 <p>This project involved programming a five-stage pipelined processor in Verilog with the fetch, decode, execute, memory access, and writeback stages. In order to make this program more robust, stalling and hazard detection mechanisms were utilized to prevent errors with reading and writing data. To test and verify our program, we used assembly test scripts to run our program and handle standard and edge cases. Intel ModelSim was used to simulate the processor and debug our Verilog program. </p>
             </div>
             <div class="project-card">
-                <img src="ece370_board.jpg" alt="Theremin Construction">
+                <img src="ece370_board.jpg" alt="Theremin Construction" width="1000" height="500">
                 <h3>Theremin Construction</h3>
                 <p>Working with two others, I constructed a theremin device. A theremin is an instrument that is played by moving one's hands around it as opposed to touching it. The theremin construction involved soldering PCBs, wiring/assembling our boards, simulating our circuits with LTSpice, and testing/analyzing our results using an oscilloscope. The theremin contained the following components: motherboard, power supply, volume processor, pitch mixer, pitch processor.</p>
             </div>
@@ -337,7 +337,7 @@
         <!-- Wisconsin Robotics -->
         <div id="wisconsin-robotics" class="organizations-category active">
             <div class="project-card">
-                <img src="wr_project.jpg" alt="Wisconsin Robotics">
+                <img src="wr_project.jpg" alt="Wisconsin Robotics" width="1000" height="500">
                 <h3>Wisconsin Robotics</h3>
                 <p>For three years, I was the electrical and chassis lead for WR. Throughout my time there, I had the opportunity to work on and lead several projects. Some key ones include the embedded programming and hardware testing of a time-of-flight sensor, optimization of rover camera and communication system, and selection and testing of brushless motors in order to improve drive stability and torque. I also got the chance to learn and develop skills in various areas of electrical engineering, ranging from PCB design, RF systems, embedded programming, soldering, and hardware testing with oscilloscopes. In my final year, our team was able to achieve 12th out of 102 teams at the University Rover Challenge 2024. </p>
             </div>
@@ -346,7 +346,7 @@
         <!-- Wisconsin Autonomous -->
         <div id="wisconsin-autonomous" class="organizations-category">
             <div class="project-card">
-                <img src="wa_project.jpg" alt="Wisconsin Autonomous">
+                <img src="wa_project.jpg" alt="Wisconsin Autonomous" width="1000" height="500">
                 <h3>Wisconsin Autonomous</h3>
                 <p> From my first semester up until a month after my graduation, I was a part of the Controls team of Wisconsin Autonomous, participants in the Indy Autonomous Challenge and then the SAE AutoDrive Challenge. The main goal of our subteam was the research and development of algorithms for vehicle path planning with real-time obstacle avoidance with the data provided to us from the Perception and Mapping subteams. In addition to utilzing Python and C++ in a majority of our programming, we also used MATLAB for simulation and ROS in the integration of our code with the other subteams. When I was there, I primarily worked on the development of various simulations in MATLAB to test different path planning and sensing algorithms. </p>
             </div>
@@ -355,7 +355,7 @@
         <!-- Badgerfly -->
         <div id="badgerfly" class="organizations-category">
             <div class="project-card">
-                <img src="badgerfly.jpg" alt="BadgerFly">
+                <img src="badgerfly.jpg" alt="BadgerFly" width="1000" height="500">
                 <h3>BadgerFly</h3>
                 <p>Halfway through my third year, I became affiliated with BadgerFly, a new organization on campus, as its vice president. I would become president in the second half of my senior year. BadgerFly is UW-Madison's first club focused on drone and VTOL flying and engineering. As president, I handled much of the team's administrative tasks and oversaw our overall project. Our goal was to design a VTOL aircraft for participation in the Vertical Flight Society's Design-Fly-Build competition. Our VTOL build is a tiltrotor VTOL, with two tilting motors at the edge of our fixed wings and a single propeller at the back for stability. While I generally worked on all aspects of engineering, my main focus was with software and controls, with much of my time spent researching autonomous VTOL flight and control systems to keep our aircraft stable. </p>
             </div>
@@ -364,7 +364,7 @@
         <!-- AIAA UW-Madison -->
         <div id="aiaa-uw" class="organizations-category">
             <div class="project-card">
-                <img src="aiaa_uw.jpg" alt="AIAA">
+                <img src="aiaa_uw.jpg" alt="AIAA" width="1000" height="500">
                 <h3>AIAA UW-Madison</h3>
                 <p>From the start of my second year, I became involved with UW's AIAA organization. This organization's competition team was centered around a small-scale high powered model rocket for participation in Spaceport America Rocketry Competition. Being one of the few ECE majors on the team, I was one of the leaders of the avionics subteam. In this subteam, we handled all of the electronic components in the rocket for tasks such as sensor measurement, propulsion, and recovery/landing. A fair amount of circuit building and design was done in order to ensure system correctness and component redundancy. </p>
             </div>
@@ -373,7 +373,7 @@
         <!-- Badger Solar Racing -->
         <div id="badger-solar" class="organizations-category">
             <div class="project-card">
-                <img src="badger_solar.jpg" alt="Badger Solar Racing">
+                <img src="badger_solar.jpg" alt="Badger Solar Racing" width="1000" height="500">
                 <h3>Badger Solar Racing</h3>
                 <p>For a large duration of my third and fourth years of undergraduate, I was a member of the Firmware team of Badger Solar Racing (formerly BadgerLoop). Our role in this subteam was to work on the control system of the car. This mainly involved creating a state machine to represent the car's different states (park, idle, etc) and utilzing digital signals in order to know when to change states. In addition to this, we worked on a PID controller to allow for PID control of our car. I utilized MATLAB in order to tune the PID controller.</p>
             </div>
@@ -382,7 +382,7 @@
         <!-- Aerial Robotics Competition Team -->
         <div id="aerial-robotics" class="organizations-category">
             <div class="project-card">
-                <img src="arct_project.jpg" alt="Aerial Object Retrieval">
+                <img src="arct_project.jpg" alt="Aerial Object Retrieval" width="1000" height="500">
                 <h3>Aerial Robotics Competition Teaml</h3>
                 <p>Upon starting my graduate program at KSU, I decided to join ARCT. Our club's goal is to develop a lightweight autonomous aircraft for the SAE Aero Design challenge. I am a part of the GNC (Guidance, Navigation, Control) subteam, in which I primarily focus on our aircraft's communication and GPS systems. Our communication system relies on the use of two 900Mhz telemetry modules to strike a good balance of strength and range in our connection. For the GPS system, we are attempting to integrate multiple techniques in order to improve our accuracy as much as possible, with the main optimization being the usage of real-time kinematics (RTK). In addition to RTK, we also are attempting to implement post-processing kinematics (PPK) and the Extended Kalman Filter (EKF) in conjunction with an Inertial Measurement Unit (IMU) in order to perform sensor fusion. </p>
             </div>
